@@ -1,0 +1,9 @@
+{
+  "name": "tete-mabe-memory",
+  "version": "1.0.0",
+  "description": "Jogo da memória Mabê & Tetê",
+  "type": "module",
+  "scripts": {
+    "test": "node memory.test.js"
+  }
+}
