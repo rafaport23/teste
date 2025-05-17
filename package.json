@@ -1,0 +1,14 @@
+{
+  "name": "star-catcher-game",
+  "version": "1.0.0",
+  "description": "Simple canvas game",
+  "main": "game.js",
+  "scripts": {
+    "start": "npx serve -s .",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdom": "^22.1.0"
+  }
+}
