@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabê & Tetê Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    <span id="attempts">Tentativas: 0</span>
+    <span id="pairs">Pares: 0/8</span>
+    <div id="progress"><div id="bar"></div></div>
+  </div>
+  <div id="game"></div>
+  <div id="win" class="hidden">
+    <p>Parabéns, Mabê & Tetê!</p>
+    <button id="restart">Jogar de novo</button>
+  </div>
+
+  <audio id="ding" src="assets/ding.wav" preload="auto"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  <script type="module" src="memory.js"></script>
+</body>
+</html>
