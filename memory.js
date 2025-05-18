@@ -1,30 +1,17 @@
 const deck = [
-  // PAR 1 – foto da Mabê
-  { id:1, content:'<img src="assets/DSC06389.JPG" alt="Mabê">' },
-  { id:1, content:'<img src="assets/DSC06389.JPG" alt="Mabê">' },
-
-  // PAR 2 – foto da Tetê
-  { id:2, content:'<img src="assets/IMG_20180710_123158_HDR.jpg" alt="Tetê">' },
-  { id:2, content:'<img src="assets/IMG_20180710_123158_HDR.jpg" alt="Tetê">' },
-
-  // PAR 3 – foto do Papai
-  { id:3, content:'<img src="assets/IMG_20200401_234517.jpg" alt="Papai">' },
-  { id:3, content:'<img src="assets/IMG_20200401_234517.jpg" alt="Papai">' },
-
-  // PAR 4 – emoji unicórnio
-  { id:4, content:'🦄' }, { id:4, content:'🦄' },
-
-  // PAR 5 – emoji arco-íris
-  { id:5, content:'🌈' }, { id:5, content:'🌈' },
-
-  // PAR 6 – emoji morango
-  { id:6, content:'🍓' }, { id:6, content:'🍓' },
-
-  // PAR 7 – emoji ursinho
-  { id:7, content:'🧸' }, { id:7, content:'🧸' },
-
-  // PAR 8 – emoji paleta de pintura
-  { id:8, content:'🎨' }, { id:8, content:'🎨' }
+// 3 pares com fotos	
+{ id:1, content:'<img src="assets/DSC06389.JPG" alt="Mabê">' },	
+{ id:1, content:'<img src="assets/DSC06389.JPG" alt="Mabê">' },	
+{ id:2, content:'<img src="assets/IMG_20180710_123158_HDR.jpg" alt="Tetê">' },	
+{ id:2, content:'<img src="assets/IMG_20180710_123158_HDR.jpg" alt="Tetê">' },	
+{ id:3, content:'<img src="assets/IMG_20200401_234517.jpg" alt="Papai">' },	
+{ id:3, content:'<img src="assets/IMG_20200401_234517.jpg" alt="Papai">' },	
+// 5 pares com emojis	
+{ id:4, content:'🦄' }, { id:4, content:'🦄' },	
+{ id:5, content:'🌈' }, { id:5, content:'🌈' },	
+{ id:6, content:'🍓' }, { id:6, content:'🍓' },	
+{ id:7, content:'🧸' }, { id:7, content:'🧸' },	
+{ id:8, content:'🎨' }, { id:8, content:'🎨' }
 ];
 
 export function shuffle(array) {
