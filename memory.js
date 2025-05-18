@@ -1,17 +1,22 @@
 const deck = [
-// 3 pares com fotos	
-{ id:1, content:'<img src="assets/DSC06389.JPG" alt="Mabê">' },	
-{ id:1, content:'<img src="assets/DSC06389.JPG" alt="Mabê">' },	
-{ id:2, content:'<img src="assets/IMG_20180710_123158_HDR.jpg" alt="Tetê">' },	
-{ id:2, content:'<img src="assets/IMG_20180710_123158_HDR.jpg" alt="Tetê">' },	
-{ id:3, content:'<img src="assets/IMG_20200401_234517.jpg" alt="Papai">' },	
-{ id:3, content:'<img src="assets/IMG_20200401_234517.jpg" alt="Papai">' },	
-// 5 pares com emojis	
-{ id:4, content:'🦄' }, { id:4, content:'🦄' },	
-{ id:5, content:'🌈' }, { id:5, content:'🌈' },	
-{ id:6, content:'🍓' }, { id:6, content:'🍓' },	
-{ id:7, content:'🧸' }, { id:7, content:'🧸' },	
-{ id:8, content:'🎨' }, { id:8, content:'🎨' }
+  // PAR 1 – foto da Mabê
+  { id: 1, content: '<img src="assets/DSC06389.JPG" alt="Mabê">' },
+  { id: 1, content: '<img src="assets/DSC06389.JPG" alt="Mabê">' },
+
+  // PAR 2 – foto da Tetê
+  { id: 2, content: '<img src="assets/IMG_20180710_123158_HDR.jpg" alt="Tetê">' },
+  { id: 2, content: '<img src="assets/IMG_20180710_123158_HDR.jpg" alt="Tetê">' },
+
+  // PAR 3 – foto do Papai
+  { id: 3, content: '<img src="assets/IMG_20200401_234517.jpg" alt="Papai">' },
+  { id: 3, content: '<img src="assets/IMG_20200401_234517.jpg" alt="Papai">' },
+
+  // PAR 4–8 – emojis
+  { id: 4, content: '🦄' }, { id: 4, content: '🦄' },
+  { id: 5, content: '🌈' }, { id: 5, content: '🌈' },
+  { id: 6, content: '🍓' }, { id: 6, content: '🍓' },
+  { id: 7, content: '🧸' }, { id: 7, content: '🧸' },
+  { id: 8, content: '🎨' }, { id: 8, content: '🎨' }
 ];
 
 export function shuffle(array) {
@@ -103,8 +108,7 @@ function createCard({ id, content }) {
 
   const back = document.createElement('div');
   back.className = 'card-back';
-  back.textContent = content;
-
+  back.innerHTML = content;
   inner.appendChild(front);
   inner.appendChild(back);
   card.appendChild(inner);
