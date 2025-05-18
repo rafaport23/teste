@@ -77,7 +77,12 @@ body {
   background-color: #FFEFC8;
   transform: rotateY(180deg);
 }
-
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 .hidden {
   display: none;
 }
