@@ -70,14 +70,19 @@ body {
 }
 
 .card-front {
-  background-color: #C8E7FF;
+  background-color: #FF6B6B;
 }
 
 .card-back {
   background-color: #FFEFC8;
   transform: rotateY(180deg);
 }
-
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 .hidden {
   display: none;
 }
