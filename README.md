@@ -18,5 +18,11 @@ npm install jest
 npm test
 ```
 
+## Quiz de séries coreanas
+Para jogar o quiz no terminal:
+```bash
+node quiz.js
+```
+
 ## Demonstração
 ![demo](assets/demo.gif)
