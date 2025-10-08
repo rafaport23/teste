@@ -1,0 +1,110 @@
+:root {
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  color: #2f265f;
+  background: linear-gradient(180deg, #fff6d8, #ffe4f1);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coiotinho {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 24px;
+  padding: 32px;
+  max-width: 540px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(47, 38, 95, 0.15);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 0 0 24px;
+  font-size: 1.1rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: linear-gradient(135deg, #ffd86f, #ff9eb5);
+  border-radius: 18px;
+  padding: 24px 12px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 24px rgba(255, 158, 181, 0.25);
+}
+
+.card span {
+  display: block;
+}
+
+.card .nickname {
+  font-size: 1rem;
+  color: #2f265f;
+  opacity: 0.8;
+}
+
+.card.called {
+  background: linear-gradient(135deg, #88f7c8, #6ec4ff);
+  transform: scale(1.06);
+  box-shadow: 0 16px 28px rgba(110, 196, 255, 0.35);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: #ff7ba9;
+  color: white;
+  box-shadow: 0 10px 20px rgba(255, 123, 169, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(255, 123, 169, 0.35);
+}
+
+button.secondary {
+  background: #ffe066;
+  color: #2f265f;
+  box-shadow: 0 10px 20px rgba(255, 224, 102, 0.3);
+}
+
+.announcement {
+  font-size: 1.2rem;
+  min-height: 2.4rem;
+}
+
+.announcement strong {
+  font-size: 1.4rem;
+}

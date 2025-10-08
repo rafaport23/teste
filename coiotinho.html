@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coiotinho Bingo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="coiotinho.css">
+</head>
+<body>
+  <main class="coiotinho">
+    <header>
+      <h1>🎉 Bingo do Coiotinho 🎉</h1>
+      <p>Vamos ver quem o Coiotinho chama primeiro!</p>
+    </header>
+
+    <section id="board" class="board"></section>
+
+    <section class="controls">
+      <button id="draw">Sortear nome</button>
+      <button id="reset" class="secondary">Recomeçar</button>
+    </section>
+
+    <section id="announcement" class="announcement">Clique em "Sortear nome" para começar!</section>
+  </main>
+
+  <audio id="howl" src="assets/ding.wav" preload="auto"></audio>
+
+  <script type="module" src="coiotinho.js"></script>
+</body>
+</html>
